@@ -1,0 +1,25 @@
+==================
+What is recursion?
+==================
+
+Recursion is nothing more than 
+a method that calls itself until a 
+base case is reached. 
+
+It's the case that when we hit a 
+conditional, at some point, the 
+recursion stops 
+
+function recursion(num: Number){
+    if(num === 10)
+    // the above is our base case, if 
+    // number is equal to 10, stop 
+    {
+        return;
+    }
+      return recursion(num + 1)
+      // above is the recursive call, 
+      // this is only reached if the 
+      // base case is not returning yet
+}
+
